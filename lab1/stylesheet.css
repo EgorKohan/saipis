@@ -1,0 +1,62 @@
+#lTable {
+    alignment: center;
+    width: max-content;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.liRuCountry {
+    color: blue;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+p{
+    max-width: 200px;
+}
+td {
+    border: 2px dashed black;
+    background-color: yellow;
+    margin: 0;
+    padding: 5px;
+}
+
+#text1 {
+    width: 70%;
+    text-decoration: underline;
+    font-style: italic;
+    color: blue;
+}
+
+#text2 {
+    /*alignment: justify;*/
+    font-weight: bold;
+}
+
+#text3 {
+    alignment: center;
+    font-stretch: normal;
+    font-size: 15px;
+    color: red;
+}
+
+#text4{
+    alignment: left;
+    font-stretch: condensed;
+    color: rgb(224,243,123);
+}
+
+#text5{
+    alignment: right;
+    font-family: Impact fantasy;
+}
+
+h1, h2, h3{
+    color: navy;
+}
+#td1{
+    background-color: orange;
+}
+.inline{
+    display: inline-block;
+}

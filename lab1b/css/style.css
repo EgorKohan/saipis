@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 700px;
+}
+
+h3[font-size="250%"][font-family="TimesNewRoman"] {
+    color: red;
+}
+
+/*p {*/
+/*    text-shadow: black 5px 5px 5px;*/
+/*}*/
+table{
+    width:100%;
+    height: 100%;
+}
+#firstCell {
+    width: 50%;
+    height: 100%;
+    background-origin: border-box;
+    background-image: url("../resource/backgroundAuto.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#auto1, #auto2, #auto3, #auto3 img{
+    width: 350px;
+    height: 200px;
+    position: absolute;
+}
+
+#auto1 {
+    top: 0;
+    left: 0;
+    opacity: 50%;
+}
+
+#auto2 {
+    top: 70px;
+    left: 150px;
+    opacity: 50%;
+}
+
+#auto3 {
+    top: 140px;
+    left: 300px;
+}
+
+#object {
+    border-radius: 20%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: objectMoving;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes objectMoving {
+    from {
+        bottom: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+    to {
+        bottom: 0;
+        left: 600px;
+        transform: rotate(180deg);
+        opacity: 50%;
+        background-color: blue;
+    }
+}
+
+#auto3Table {
+    position: absolute;
+    width: 100%;
+    opacity: 100%;
+    color:wheat;
+    text-shadow: black 3px 3px 10px;
+}
+#auto3 div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#firstCell ~ td{
+    max-width: 200px;
+    text-align: center;
+    text-shadow: black 5px 5px 5px;
+}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laba 3</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+<body>
+<div class="body">
+
+    <header>
+        <h1>Требования автомобиля</h1>
+    </header>
+
+    <main>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Main</a>
+                </li>
+                <li>
+                    <a href="*">Results</a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <form name="autoForm" method="post" action="index.html">
+                <fieldset>
+                    <legend>Input your data</legend>
+                    <label>
+                        Input auto name: <input id="name" type="text" name="name" required>
+                    </label>
+                    <label>
+                        Input auto age: 0<input type="range" value="0" name="age" min="0" max="20">20
+                    </label>
+                    <div class="checkBoxAuto">
+                        <label>
+                            Heated stealing wheel: <input type="checkbox" name="heatedWheel">
+                        </label>
+                        <label>
+                            Parking sensors: <input type="checkbox" name="parkingSensors">
+                        </label>
+                        <label>
+                            Leather interior: <input type="checkbox" name="leatherInterior">
+                        </label>
+                    </div>
+                    <div class="radiosAuto">
+                        <label>
+                            Mech: <input type="radio" name="kpp" value="mech" checked>
+                        </label>
+                        <label>
+                            Auto: <input type="radio" name="kpp" value="auto">
+                        </label>
+                    </div>
+                    <label>
+                        Choose country: <select name="country">
+                        <option value="China">China</option>
+                        <option value="Germany">Germany</option>
+                        <option value="USA">USA</option>
+                    </select>
+                    </label>
+                    <label>
+                        Count of users: <input type="number" name="usersCount" step="1" min="0" max="10" required>
+                    </label>
+                    <label>
+                        Email: <input type="email" name="email" required>
+                    </label>
+                </fieldset>
+                <div id="formButtons">
+                    <input id="sbbtn" type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </form>
+        </article>
+
+        <aside>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>
+            Контактная информация БЛА БЛАБЛА БАЛАБ ЛАБАЛА
+        </p>
+    </footer>
+</div>
+
+<script>
+    localStorage.setItem("name", "Egor")
+    var a = document.sear
+</script>
+
+</body>
+
+</html>

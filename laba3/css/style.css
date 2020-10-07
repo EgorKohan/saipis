@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 0 5em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+}
+
+main {
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+}
+
+main > nav {
+    flex: 0 0 10%;
+    background-color: pink;
+}
+
+main nav ul > li{
+    border-bottom: 1px solid silver;
+    text-align: center;
+}
+
+main nav ul li > a{
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+main nav ul li > a:hover{
+    background-color: lightpink;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+main > article {
+    flex: 0 2 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+}
+
+main article > form{
+    margin: 20px;border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+main > aside {
+    flex: 2 0 10%;
+    padding: 10px;
+    background-color: pink;
+    text-align: center;
+}
+
+main aside > p {
+    max-height: 500px;
+}
+
+main form fieldset label {
+    display: block;
+    padding: 10px;
+}
+
+main form fieldset > legend {
+    text-align: center;
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#formButtons {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#formButtons input[type="submit"], #formButtons input[type="reset"] {
+    margin: 0 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    background-color: #1ce25f;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+#formButtons input[type="submit"]:hover, #formButtons input[type="reset"]:hover{
+    opacity: 1;
+}
+
+#formButtons input[type="reset"]{
+    background-color: red;
+}
+
+footer {
+    flex: 0 0 5em;
+    background-color: silver;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.checkBoxAuto, .radiosAuto {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    /*body {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*}*/
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main > nav {
+        flex: 0 0 100px;
+    }
+
+}

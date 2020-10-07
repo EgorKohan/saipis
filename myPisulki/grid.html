@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 100%;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-areas:
+                    "header"
+            "lele"
+            "article"
+            "aside"
+            "footer";
+            grid-template-rows: repeat(5, 10vh);
+        }
+
+        @media screen and (min-width: 468px) {
+
+            .wrapper {
+                display: grid;
+                grid-template-areas:
+                    "header header header header header"
+            "lele article article article aside"
+            "lele article article article aside"
+            "lele article article article aside"
+            "footer footer footer footer footer";
+                grid-template-columns: repeat(5, 20%);
+                grid-template-rows: repeat(5, 20vh);
+            }
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #1ce25f;
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: #cccccc;
+        }
+
+        .lele {
+            grid-area: lele;
+            background-color: #FF0000;
+        }
+
+        .article {
+            grid-area: article;
+            background-color: yellow;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="header"></div>
+    <div class="lele"></div>
+    <div class="article"></div>
+    <div class="aside"></div>
+    <div class="footer"></div>
+</div>
+
+</body>
+</html>
